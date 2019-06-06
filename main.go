@@ -10,17 +10,22 @@ func main() {
 	// 	fmt.Println(i, card)
 	// }
 
-	cards := newDeck()
+	// cards := newDeck()
 
-	hand, remainingCards := deal(cards, 5)
+	// hand, remainingCards := deal(cards, 7)
 
-	hand.print()
-	remainingCards.print()
+	// hand.print()
+	// remainingCards.print()
+
+	// greeting := "Hi there!"
+	// fmt.Println([]byte(greeting))
 
 	// cards.print()
 
-}
+	// cards := newDeck()
+	// cards.saveToFile("my_cards")
 
-// func newCard() string {
-// 	return "Ace of Diamond"
-// }
+	cards := newDeckFromFile("my_cards")
+
+	cards.print()
+}
